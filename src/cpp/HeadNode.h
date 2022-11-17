@@ -196,8 +196,7 @@ size_t HeadNode<T, _Compare>::index(const T& value) const {
             return idx - 1;
         }
     }
-    _throwValueErrorNotFound(value);
-    return 0;
+    return -1;
 }
 
 template <typename T, typename _Compare>
